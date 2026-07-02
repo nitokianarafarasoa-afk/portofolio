@@ -716,3 +716,11 @@ main > section {
   .project-grid { grid-template-columns: 1fr; }
   .skill-row { grid-template-columns: 80px 1fr 40px; gap: 10px; }
 }
+.cursor {
+  display: inline-block;
+  color: var(--gold);
+  animation: blink 0.8s step-end infinite;
+}
+@keyframes blink {
+  50% { opacity: 0; }
+}
