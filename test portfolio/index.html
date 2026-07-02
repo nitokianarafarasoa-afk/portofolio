@@ -1,90 +1,257 @@
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nitokiana Fabiolla — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Sora:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Mon Portfolio</h1>
+<header class="topbar">
+  <nav class="navbar">
+    <a href="#accueil" class="logo">NF<span class="logo-dot">.</span></a>
+    <ul class="menu">
+      <li><a href="#accueil" class="tab">Accueil</a></li>
+      <li><a href="#apropos" class="tab">À propos</a></li>
+      <li><a href="#projets" class="tab">Projets</a></li>
+      <li><a href="#competences" class="tab">Compétences</a></li>
+      <li><a href="#contact" class="tab">Contact</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
 
-            <ul class="menu">
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<main>
 
-    <section id="accueil" class="hero">
-        <div class="hero-text">
-            <h1>Bonjour, je suis RAFARASOA Nitokiana Fabiolla</h1>
-            <h2>Je suis en cours de formation</h2>
-
-            <p>
-                Passionnée par l'informatique, je souhaite prochainement suivre une formation afin d'acquérir de nouvelles compétences solides et de construire une carrière dans ce domaine.
-            </p>
+  <!-- ACCUEIL -->
+  <section id="accueil" class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">carnet d'apprentissage — 2026</p>
+        <h1>Bonjour, je suis<br><span class="hero-name">RAFARASOA<br>Nitokiana Fabiolla</span></h1>
+        <p class="hero-lede">
+          Passionnée par l'informatique, je construis mes compétences pas à pas —
+          <span class="typed-target">développement web</span>, aujourd'hui.
+        </p>
+        <p class="hero-status">
+          <span class="status-dot"></span> En formation à Antananarivo, Madagascar
+        </p>
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">Voir mon parcours</a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
         </div>
-
-        <div class="hero-image">
-            <img src="https://lh3.googleusercontent.com/a/ACg8ocLtKitQwO631aN9d_bDYengP0dAEfOhVwRXAAn9gnZDBf6soErD=s288-c-no" alt="Photo de profil">
+      </div>
+      <div class="hero-image">
+        <div class="polaroid">
+          <img src="https://lh3.googleusercontent.com/a/ACg8ocLtKitQwO631aN9d_bDYengP0dAEfOhVwRXAAn9gnZDBf6soErD=s288-c-no" alt="Photo de profil de Nitokiana">
+          <span class="tape tape-1"></span>
         </div>
-    </section>
-    </section>
-
-<!-- Ici commence la section À propos -->
-
-<section id="apropos" class="about">
-    ...
-</section>
-<section id="apropos" class="about">
-
-    <div class="about-image">
-        <img src="https://lh3.googleusercontent.com/a/ACg8ocLtKitQwO631aN9d_bDYengP0dAEfOhVwRXAAn9gnZDBf6soErD=s288-c-no" alt="Photo de Nitokiana">
+        <div class="terminal-chip" aria-hidden="true">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <code>~/nitokiana — en cours d'apprentissage</code>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="about-content">
-        <h2>À propos de moi</h2>
+  <!-- A PROPOS -->
+  <section id="apropos" class="about">
+    <p class="eyebrow center">page 01 — qui je suis</p>
+    <h2 class="section-title center">À propos de moi</h2>
 
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocLtKitQwO631aN9d_bDYengP0dAEfOhVwRXAAn9gnZDBf6soErD=s288-c-no" alt="Photo de Nitokiana">
+        <span class="tape tape-2"></span>
+      </div>
+      <div class="about-content">
         <p>
-            Je m'appelle <strong>RAFARASOA Nitokiana Fabiolla</strong>. Passionnée par l'informatique, je suis actuellement en formation afin de développer mes compétences en développement web et en design.
+          Je m'appelle <strong>RAFARASOA Nitokiana Fabiolla</strong>. Passionnée par l'informatique,
+          je suis actuellement en formation afin de développer mes compétences en développement web
+          et en design.
+        </p>
+        <p>
+          Mon objectif est de créer des sites web modernes, intuitifs et esthétiques, tout en
+          continuant à apprendre et à évoluer dans le domaine du numérique.
         </p>
 
-        <p>
-            Mon objectif est de créer des sites web modernes, intuitifs et esthétiques, tout en continuant à apprendre et à évoluer dans le domaine du numérique.
-        </p>
-
-        <div class="about-info">
-            <p><strong>📍 Ville :</strong> Antananarivo, Madagascar</p>
-            <p><strong>🎓 Statut :</strong> En formation</p>
-            <p><strong>🌐 Langues :</strong> Français, Malagasy</p>
-             <p><strong>💻 Domaine :</strong> Informatique(en apprentissage)</p>
+        <div class="info-cards">
+          <div class="info-card">
+            <span class="info-label">📍 Ville</span>
+            <span class="info-value">Antananarivo, Madagascar</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label">🎓 Statut</span>
+            <span class="info-value">En formation</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label">🌐 Langues</span>
+            <span class="info-value">Français, Malagasy</span>
+          </div>
+          <div class="info-card">
+            <span class="info-label">💻 Domaine</span>
+            <span class="info-value">Informatique (apprentissage)</span>
+          </div>
         </div>
 
-        <h3>Mes qualités</h3>
-
+        <h3 class="qualities-title">Mes qualités</h3>
         <ul class="qualities">
-            <li>✔ Créative</li>
-            <li>✔ Curieuse</li>
-            <li>✔ Organisée</li>
-            <li>✔ Rigoureuse</li>
-            <li>✔ Esprit d'équipe</li>
-            <li>✔ Toujours prête à apprendre</li>
+          <li>Créative</li>
+          <li>Curieuse</li>
+          <li>Organisée</li>
+          <li>Rigoureuse</li>
+          <li>Esprit d'équipe</li>
+          <li>Toujours prête à apprendre</li>
         </ul>
 
-        <a href="#" class="about-btn">Télécharger mon CV</a>
+        <a href="#" class="btn btn-primary about-btn">Télécharger mon CV</a>
+      </div>
+    </div>
+  </section>
 
+  <!-- PROJETS -->
+  <section id="projets" class="projects">
+    <p class="eyebrow center">page 02 — travaux en construction</p>
+    <h2 class="section-title center">Mes projets</h2>
+    <p class="section-sub center">
+      Mon portfolio de projets est en cours de constitution au fil de ma formation.
+      Voici ce qui s'en vient.
+    </p>
+
+    <div class="project-grid">
+      <article class="project-card is-placeholder">
+        <div class="project-thumb">
+          <span class="thumb-tag">bientôt</span>
+        </div>
+        <div class="project-body">
+          <h3>Premier site vitrine</h3>
+          <p>Un site HTML/CSS responsive pour mettre en pratique mise en page et accessibilité.</p>
+          <div class="tag-row">
+            <span class="tag">HTML</span><span class="tag">CSS</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card is-placeholder">
+        <div class="project-thumb">
+          <span class="thumb-tag">bientôt</span>
+        </div>
+        <div class="project-body">
+          <h3>Application interactive</h3>
+          <p>Un projet JavaScript pour explorer la logique, les événements et les données.</p>
+          <div class="tag-row">
+            <span class="tag">JavaScript</span><span class="tag">UI</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card is-placeholder">
+        <div class="project-thumb">
+          <span class="thumb-tag">bientôt</span>
+        </div>
+        <div class="project-body">
+          <h3>Refonte design</h3>
+          <p>Un exercice de refonte visuelle pour travailler la hiérarchie et la typographie.</p>
+          <div class="tag-row">
+            <span class="tag">Design</span><span class="tag">Figma</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section id="competences" class="skills">
+    <p class="eyebrow center">page 03 — progression</p>
+    <h2 class="section-title center">Compétences</h2>
+
+    <div class="skills-terminal">
+      <div class="skill-row">
+        <span class="skill-name">HTML</span>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+        <span class="skill-pct">75%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">CSS</span>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:65%"></div></div>
+        <span class="skill-pct">65%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">JavaScript</span>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:35%"></div></div>
+        <span class="skill-pct">35%</span>
+      </div>
+      <div class="skill-row">
+        <span class="skill-name">Design UI</span>
+        <div class="skill-bar"><div class="skill-fill" style="--pct:40%"></div></div>
+        <span class="skill-pct">40%</span>
+      </div>
     </div>
 
-</section>
+    <div class="soft-skills">
+      <span class="tag">Créativité</span>
+      <span class="tag">Curiosité</span>
+      <span class="tag">Organisation</span>
+      <span class="tag">Rigueur</span>
+      <span class="tag">Travail d'équipe</span>
+      <span class="tag">Apprentissage continu</span>
+    </div>
+  </section>
 
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <p class="eyebrow center">page 04 — restons en contact</p>
+    <h2 class="section-title center">Contact</h2>
+    <p class="section-sub center">
+      Une opportunité de formation, un stage ou simplement envie d'échanger ? Écrivez-moi.
+    </p>
+
+    <div class="contact-grid">
+      <form class="contact-form" onsubmit="return false;">
+        <label for="name">Nom</label>
+        <input id="name" type="text" name="name" placeholder="Votre nom" required>
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="votre@email.com" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">nitokiana@email.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Localisation</span>
+          <span class="contact-value">Antananarivo, Madagascar</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Réseaux</span>
+          <div class="social-row">
+            <a href="#" class="social-link">LinkedIn</a>
+            <a href="#" class="social-link">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 RAFARASOA Nitokiana Fabiolla — Construit avec passion, en apprentissage continu.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
