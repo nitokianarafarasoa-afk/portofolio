@@ -145,7 +145,8 @@ main > section {
   border: 1px solid transparent;
   border-bottom: none;
   color: var(--text-muted);
-  transition: color var(--transition), background var(--transition), border-color var(--transition);
+  transition: color var(--transition);
+  background : var(--transition), border-color var(--transition);
 }
 
 .tab:hover,
@@ -240,7 +241,8 @@ main > section {
   border-radius: var(--radius-sm);
   border: 1px solid transparent;
   cursor: pointer;
-  transition: transform var(--transition), background var(--transition), border-color var(--transition);
+  transition: transform var(--transition);
+  background: var(--transition), border-color var(--transition);
   display: inline-block;
 }
 .btn:hover { transform: translateY(-2px); }
