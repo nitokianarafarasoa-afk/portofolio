@@ -56,7 +56,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(244, 247, 251, 0.3);
+  background: rgba(244, 247, 251, 0.70);
   z-index: -1;
 }
 
