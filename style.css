@@ -9,7 +9,7 @@
   --border-strong: rgba(15, 23, 42, 0.18);
 
   --text: #0F172A;
-  --text-muted: #341835;
+  --text-muted: #5B6B84;
 
   --gold: #2563EB;               /* accent principal — bleu */
   --gold-soft: rgba(37, 99, 235, 0.12);
@@ -41,7 +41,7 @@ html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
-  background: var(--bg) url("photo.webp") center center / cover fixed no-repeat;
+  background: var(--bg) url("fond.png") center center / cover fixed no-repeat;
   background-blend-mode: normal;
   position: relative;
   color: var(--text);
@@ -56,7 +56,7 @@ body::before {
   content: "";
   position: fixed;
   inset: 0;
-  background: rgba(244, 247, 251, 0.3);
+  background: rgba(244, 247, 251, 0.88);
   z-index: -1;
 }
 
@@ -338,6 +338,12 @@ main > section {
   transform: rotate(8deg);
 }
 
+.about-content {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 32px;
+}
 .about-content p {
   color: var(--text-muted);
 }
@@ -351,7 +357,7 @@ main > section {
 }
 
 .info-card {
-  background: var(--surface);
+  background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: var(--radius-sm);
   padding: 14px 16px;
@@ -386,8 +392,9 @@ main > section {
   padding: 7px 14px;
   border: 1px solid var(--border-strong);
   border-radius: 999px;
-  color: var(--gold);
-  background: var(--surface);
+  color: var(--text);
+  font-weight: 500;
+  background: var(--surface-2);
 }
 
 /* ============================================
